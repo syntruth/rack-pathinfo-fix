@@ -1,5 +1,5 @@
 Gem::Specification.new do |s|
-  s.name        = 'hola'
+  s.name        = 'rack-pathinfo-fix'
   s.version     = '0.0.1'
   s.date        = '2014-03-26'
   s.summary     = "Rack Middleware to fix PATH_INFO munging."
