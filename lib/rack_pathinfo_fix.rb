@@ -1,5 +1,5 @@
-# Rack PathInfo Fix Version 0.0.1
-# 
+# Rack PathInfo Fix
+#
 # This class is a Rack Middleware that fixes up
 # PATH_INFO to be correct for Rack based apps.
 class RackPathInfoFix
@@ -8,7 +8,12 @@ class RackPathInfoFix
   end
 
   def call(env)
-    env['PATH_INFO'] = File.join(env['SCRIPT_NAME'], env['PATH_INFO'])
+    pi = env['PATH_INFO']
+    sn = env['SCRIPT_NAME']
+
+    if pi != sn
+      env['PATH_INFO'] = File.join(sn, pi)
+    end
 
     @app.call env
   end
