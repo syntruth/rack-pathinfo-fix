@@ -7,6 +7,7 @@ Gem::Specification.new do |s|
   s.authors     = ["Randy Carnahan"]
   s.email       = 'syntruth@gmail.com'
   s.files       = ["lib/rack_pathinfo_fix.rb"]
-  s.license     = 'GPL'
+  s.homepage    = "https://github.com/syntruth/rack-pathinfo-fix"
+  s.license     = "GPL"
 end
 
