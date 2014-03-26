@@ -14,7 +14,7 @@ To install via gems:
 
 Or, if you are using the preferred method of Bundler, in your Gemfile:
 
-    gem 'rack-pathinfo-fix
+    gem 'rack-pathinfo-fix'
 
 # Usage
 
