@@ -6,12 +6,22 @@ path info, by stripping the first path segment from it and setting the
 `SCRIPT_NAME` to that segment. This isn't *wrong* behaviour, but Rack
 applications expect the segement there when matching up mapped routes.
 
+# Install
+
+To install via gems:
+
+    gem install rack-pathinfo-fix
+
+Or, if you are using the preferred method of Bundler, in your Gemfile:
+
+    gem 'rack-pathinfo-fix
+
 # Usage
 
 In your config.ru
 
-    require 'rack_pathinfo_fix'
-    require 'app.rb' # whatever your app file is.
+    require 'rack_pathinfo_fix' # If you're not using Bundler.
+    require 'app.rb'            # whatever your app file is.
 
     use RackPathInfoFix
 
